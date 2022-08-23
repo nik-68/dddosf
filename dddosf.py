@@ -868,7 +868,16 @@ elif sys.platform.startswith("freebsd"):
    os.system('clear')
 else:
    os.system('color ' +random.choice(['B'])+ " & cls & title Tools DDoS IrgyNW [ DDoS Attack ]")
-os.system("figlet DDosik")
+print("\033[93m
+            __      ANONYMOUS       _____
+           / /  __ _ _   _  ___ _  |___  |
+          / /  / _` | | | |/ _ \ '__| / /
+         / /__| (_| | |_| |  __/ |   / /
+         \____/\__,_|\__, |\___|_|  /_/
+                     |___/
+                ADDED NEW METHOD 
+            Method [Get/Post/Head]💥
+\033[93m")
 time.sleep(3)
 print()
 #ip
