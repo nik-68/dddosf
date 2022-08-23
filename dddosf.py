@@ -1,5 +1,22 @@
 # import module
 import os, sys
+#Code Time
+from datetime import datetime
+now = datetime.now()
+hour = now.hour
+minute = now.minute
+day = now.day
+month = now.month
+year = now.year
+
+#Colour
+yellow='\033[93m'
+gren='\033[92m'
+cyan='\033[96m'
+pink='\033[95m'
+red='\033[91m'
+b='\033[1m'
+##############
 
 try:
     import socks, requests, wget, cfscrape, urllib3
@@ -853,6 +870,12 @@ else:
    os.system('color ' +random.choice(['B'])+ " & cls & title Tools DDoS IrgyNW [ DDoS Attack ]")
 os.system("figlet DDosik")
 time.sleep(3)
+print()
+#ip
+url = input("\033[94m╔═══\033[91m[ Url ] •\n\033[94m╠══>\033[0m ")
+url_chek = requests.get(url)
+ip = socket.gethostbyname(url.replace("https://","").replace("http://",""))
+print(ip)
 print()
 ip = str(input("[+] Target IP : => "))
 port = int(input("[+] Port : => "))
